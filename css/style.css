@@ -160,28 +160,32 @@ section.projetos h3{
                  -17px 17px 38px #063658;
 }
 
-.img-projeto1{
-    background-image: url('../imagens/animez');
+
+.projetos-img{
     background-position: center;
     background-size: cover;
     padding-top: 40%;
     border-radius: 19px 19px 0 0 ;
+}
+
+.img-projeto1{
+    background-image: url('../imagens/animez');
 }
 
 .img-projeto2{
     background-image: url('../imagens/tip');
-    background-position: center;
-    background-size: cover;
-    padding-top: 40%;
-    border-radius: 19px 19px 0 0 ;
 }
 
 .img-projeto3{
     background-image: url('../imagens/insta');
-    background-position: center;
-    background-size: cover;
-    padding-top: 40%;
-    border-radius: 19px 19px 0 0 ;
+}
+
+.img-projeto4{
+    background-image: url('../imagens/calculadora.png');
+}
+
+.img-projeto5{
+    background-image: url('../imagens/detector-de-frango.png');
 }
 
 .box-projeto span{
@@ -220,6 +224,27 @@ section.projetos h3{
     color: white;
 }
 
+.descricao-projeto a i:hover{
+    color: #17f9ff;
+}
+
+.ver-mais{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ver-mais a{
+    text-decoration: none;
+    background: white;
+    color: #03213d;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.ver-mais a:hover{
+    background: #17f9ff;
+}
 /*Tecnologias*/
 
 section.tecnologias h3{

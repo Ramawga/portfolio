@@ -169,7 +169,7 @@ section.projetos h3{
 }
 
 .img-projeto1{
-    background-image: url('../imagens/animez');
+    background-image: url('../imagens/to-do-list.png');
 }
 
 .img-projeto2{
@@ -186,6 +186,10 @@ section.projetos h3{
 
 .img-projeto5{
     background-image: url('../imagens/detector-de-frango.png');
+}
+
+.img-projeto6{
+    background-image: url('../imagens/animez');
 }
 
 .box-projeto span{

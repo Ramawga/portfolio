@@ -191,6 +191,9 @@ section.projetos h3{
 .img-projeto6{
     background-image: url('../imagens/animez');
 }
+.img-projeto7{
+    background-image: url('../imagens/pomodoro.png');
+}
 
 .box-projeto span{
     position: relative;

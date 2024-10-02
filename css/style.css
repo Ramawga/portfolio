@@ -3,11 +3,15 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: #272727;
+}
+
+p{
+    font-size: 17px;
 }
 
 body{
-    background-color: #03213d;
-    color: white;
+    background-color: #EFFFFB;
 }
 
 .container{
@@ -15,22 +19,13 @@ body{
     margin: 0 auto;
 }
 
-/*
-paleta de cores  azul
-.color1 { #0a4c6c };
-.color2 { #083e5c };
-.color3 { #052f4d };
-.color4 { #03213d };
-.color5 { #00122d };
-*/
-
 /*header*/
 
 header{
     width: 100%;
     height: 60px;
-    background-color: #00122d; 
-
+    background-color: #272727;
+    margin-bottom: 40px;
 }
 
 header .container{
@@ -39,12 +34,12 @@ header .container{
     line-height: 60px;
 }
 
-.nickname i{
+.icon i{
     font-size: 27px;
     font-weight: bold;
-    color: #17f9ff;
     line-height: 60px;
     margin-left: 2vw;
+    color: white;
 }
 
 .atalhos{
@@ -57,7 +52,7 @@ header .container{
 }
 
 .mobile ul{
-    background: #00122d;
+    background: #272727;
 }
 
 .atalhos ul li{
@@ -71,13 +66,10 @@ header .container{
     color: white;
 }
 
-.atalhos ul li a:hover{
-    color: #17f9ff;
+.atalhos ul li a:hover, .mobile ul li a:hover{
+    text-decoration: underline;
 }
 
-.mobile ul li a:hover{
-    color: #17f9ff;
-}
 
 nav.mobile{
     display: none;
@@ -88,49 +80,35 @@ nav.mobile{
     width: 100%;
 }
 
-
 .bars{
     position: absolute;
     right: 2%;
     display: none;
     cursor: pointer;
     font-size:27px;
-    color: white;
     flex-grow: 1;
 }
 
+.bars i{
+    color: white;
+}
+
 .bars i:hover{
-    color: #17f9ff;
+    color: #EFFFFB;
 }
 
 /*sobre-mim*/
-
-.textos-sobre{
-    text-align: center;
-}
-
-.textos-sobre h1{
-    margin-top: 70px;
-    font-size: 50px;
-}
-
-.textos-sobre h1 span{
-    color: #17f9ff;
-}
-
 .textos-sobre h3{
-    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
     font-size: 33px;
-    font-weight: lighter;
 }
-
 .textos-sobre p{
     margin: 40px auto 0 auto;
     text-align: justify;
     line-height: 1.5;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     max-width: 600px;
-    font-size: 17px;
 }
 
 /*projetos*/
@@ -138,12 +116,22 @@ nav.mobile{
 section.projetos, section.tecnologias{
     margin-top: 70px;
 }
-
-section.projetos h3{
+section.projetos .head-container{
+    margin-bottom: 70px;
+}
+section.projetos .head-container h3{
     text-align: center;
     margin-bottom: 40px;
     font-size: 33px;
 }
+section.projetos .head-container p{
+    margin: 40px auto 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    max-width: 600px;
+}
+
 
 .wrap{
     display: flex;
@@ -152,89 +140,24 @@ section.projetos h3{
 
 .box-projeto{
     width: calc(33.3% - 40px);;
-    height: 300px;
     margin: 20px;
-    border-radius: 19px;
-    background: linear-gradient(45deg, #053252, #052a45);
-    box-shadow:  17px -17px 38px #042842,
-                 -17px 17px 38px #063658;
+}
+.box-projeto img{
+    display: block;  
+    width: 100%;
+    height: auto;   
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 
-.projetos-img{
-    background-position: center;
-    background-size: cover;
-    padding-top: 40%;
-    border-radius: 19px 19px 0 0 ;
+.box-projeto a i{
+    font-size: 26px;
+    margin-top: 10px;
 }
-
-.img-projeto1{
-    background-image: url('../imagens/to-do-list.png');
+.box-projeto a i:hover{
+    color: #4F98CA;
 }
-
-.img-projeto2{
-    background-image: url('../imagens/tip');
-}
-
-.img-projeto3{
-    background-image: url('../imagens/insta');
-}
-
-.img-projeto4{
-    background-image: url('../imagens/calculadora.png');
-}
-
-.img-projeto5{
-    background-image: url('../imagens/detector-de-frango.png');
-}
-
-.img-projeto6{
-    background-image: url('../imagens/animez');
-}
-.img-projeto7{
-    background-image: url('../imagens/pomodoro.png');
-}
-
-.box-projeto span{
-    position: relative;
-    top: -35px;
-    left: 10px;
-    color: yellow;
-    font-size: 1.5vw;
-    font-weight: bold;
-    -webkit-text-stroke: 1px black;
-    text-stroke: 1px black;
-    overflow: hidden;
-}
-
-.descricao-projeto{
-    text-align: center
-}
-
-.descricao-projeto p{
-    position: relative;
-    top: -25px;
-    text-align: justify;
-    margin: 5px 10px
-}
-
-.tecnologias-projeto p{
-    margin: 10px 5px 0px 5px;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.descricao-projeto a i{
-    cursor: pointer;
-    margin: 0 5px 0 5px;
-    font-size: 23px;
-    color: white;
-}
-
-.descricao-projeto a i:hover{
-    color: #17f9ff;
-}
-
 .ver-mais{
     width: 100%;
     margin-top: 30px;
@@ -243,16 +166,20 @@ section.projetos h3{
 
 .ver-mais a{
     text-decoration: none;
-    background: white;
-    color: #03213d;
-    padding: 5px 10px;
+    background: #50D890;
+    color: #272727;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
 .ver-mais a:hover{
-    background: #17f9ff;
+    background: #4F98CA;
 }
 /*Tecnologias*/
+
+section.tecnologias{
+    margin-bottom: 230px;
+}
 
 section.tecnologias h3{
     text-align: center;
@@ -260,19 +187,47 @@ section.tecnologias h3{
     overflow: hidden;
 }
 
-.lista-tecnologias ul{
-    list-style-type: none;  
+section.tecnologias p{
+    margin: 40px auto 30px auto;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    max-width: 600px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden; 
+    padding: 20px 0;
+    position: absolute;
+    left: 0;
+  }
+  
+  .slider-track {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px; /* Espaço entre os itens */
+    transition: transform 0.1s linear; /* Suaviza o movimento */
+  }
+  
+  .slider-item {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre ícone e texto */
+    white-space: nowrap; /* Impede a quebra de linha nos textos */
+  }
+  
+
+.slider-item{
     text-align: center;
+  display: inline;
+  margin: 0 40px;
 }
-
-.lista-tecnologias ul li{
-    display: inline-block;
-}
-
-.lista-tecnologias ul li i{
-    display: block;
-    font-size: 80px;
-    margin: 40px 30px 0 30px;
+.slider-item i{
+  font-size: 80px;
+  display: block;
 }
 
 /*contato*/
@@ -291,23 +246,31 @@ section.contato h3{
 }
 
 .botao{
-    border: 2px solid #1d6285;
     display: inline;
     margin: 15px;
     padding: 5px 10px;
-
+}
+.contato .Pcontato{
+    margin: 40px auto 0 auto;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    max-width: 600px;
 }
 
-.botao a{
+.botoes-wrap .botao a,.botoes-wrap .botao p{
     text-decoration: none;
-    color: white;
+    color: #272727;
     line-height: 40px;
 }
 
-.botao a i{
+.botao i{
     vertical-align: middle;
     font-size: 27px;
+}
 
+.botao i:hover{
+    color: #4F98CA;
 }
 
 /*footer*/
@@ -315,16 +278,17 @@ section.contato h3{
 footer{
     margin-top: 40px;
     padding: 15px;
-    background: black;
+    background: #272727;
     text-align: center;
 }
 
-.texto-footer h2 span{
-    color: #17f9ff;
+.texto-footer h2{
+    color: white;
 }
 
 .texto-footer p{
     font-weight: lighter;
+    color: white;
 }
 
 .footer-nav ul{
@@ -343,9 +307,8 @@ footer{
 }
 
 .footer-nav ul li a:hover{
-    color: #17f9ff;
+    text-decoration: underline;
 }
-
 /*responsivo*/
 
 @media screen and (max-width:1024px){
@@ -357,14 +320,15 @@ footer{
     .bars{display: block;}
 
 
-    .textos-sobre p{
+    .textos-sobre p, .tecnologias p, .head-container p, .Pcontato{
         width: 80vw;
     }
 
     .wrap{justify-content: center;}
     .box-projeto{
-        width: 70%;
+        width: 100%;
         height: auto;
+        margin-bottom: 30px;
     }
 
     .box-projeto span{
@@ -376,8 +340,6 @@ footer{
 
     .textos-sobre h1{
         font-size: 24px;
-    
-
     }
 
     .textos-sobre h3{
@@ -389,8 +351,3 @@ footer{
         font-size: 4.5vw;
     }
 }
-
-
-
-
-

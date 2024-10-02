@@ -13,8 +13,8 @@
 <body>
     <header>
         <div class="container">
-            <div class="nickname">
-                <i class="fa-solid fa-user"></i>
+            <div class="icon">
+                <i class="fa-solid fa-code"></i>
             </div><!--nickname-->
             <nav class="atalhos">
                 <ul>
@@ -43,101 +43,66 @@
     <section id="navsobre" class="sobre-mim">
         <div class="container">
             <div class="textos-sobre">
-                <h1>Olá, eu sou o Lucas <span>Rama</span>yana!</h1>
-                <h3>Desenvolvendor Front End</h3>
-                <p>Com 19 anos sou estudante de ciência da computação na UNISUL, atualmente no 
-                    4º período. Tive meu primeiro contato com programação e conteúdos relacionados 
-                    à tecnologia em 2021, foi nesse momento que descobri qual área eu queria cursar 
-                    e me tornar um excelente profissional.
-                    <br>
-                    <br>
-                    Ainda não possuo experiência profissional na área, mas busco uma
-                    oportunidade de ingressar no mercado de trabalho.
-                </p>
+                <h3>Sobre Mim</h3>
+            <p>Sou Lucas Ramayana, um desenvolvedor front-end com experiência em criar interfaces modernas, responsivas e 
+                interativas usando tecnologias como JavaScript, React, HTML e CSS. Tenho uma paixão por design centrado
+                 no usuário e desenvolvimento eficiente. Acredito que a atenção aos detalhes e a otimização da experiência
+                  do usuário são o que diferenciam uma boa aplicação de uma excelente.</p>
             </div><!--textos-sobre-->
         </div><!--container-->
     </section><!--sobre-mim-->
 
+    <section id="navtec" class="tecnologias">
+        <div class="container">
+            <h3>Ferramentas e tecnologias que domino</h3>
+            <p>Possuo uma sólida base em desenvolvimento front-end, com ênfase em otimização de performance, acessibilidade e design
+                 responsivo. Essas são algumas das principais tecnologias e ferramentas que utilizo:</p>
+            <div class="slider">
+                <div class="slider-track" id="slider-track">
+                        <div class="slider-item"><i class="fa-brands fa-html5"></i>HTML5</div>
+                        <div class="slider-item"><i class="fa-brands fa-css3-alt"></i>CSS 3</div>
+                        <div class="slider-item"><i class="fa-brands fa-js"></i>JAVASCRIPT</div>
+                        <div class="slider-item"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</div>
+                        <div class="slider-item"><i class="fa-brands fa-react"></i>REACT JS</div> 
+                        <div class="slider-item"><i class="fa-brands fa-node-js"></i>NODE JS</div>       
+                        <div class="slider-item"><i class="fa-solid fa-database"></i>MONGO DB</div>       
+                        <div class="slider-item"><i class="fa-solid fa-code"></i>TYPESCRIPT</div>       
+                        <div class="slider-item"><i class="fa-brands fa-sass"></i>SASS</div>       
+                              
+                </div>
+            </div>
+        </div><!--container-->
+    </section><!--tecnologias-->
+
+
     <section id="navprojetos" class="projetos">
         <div class="container">
-                <h3>Projetos</h3>
-                <div class="wrap">
-                    <div class="box-projeto">
-                        <div class="projetos-img img-projeto1"></div>
-                        <span>To do list</span>
-                        <div class="descricao-projeto">
-                            <p>Organize suas tarefas diárias! Projeto feito com intuito de praticar Javascript.</p>
-                            <div class="tecnologias-projeto">
-                                <p>html</p>
-                                <p>css</p>
-                                <p>js</p>
-                            </div><!--tecnologias-projeto-->                          
-                            <a target="_blank" href="https://ramawga.github.io/To-do-list/"><i class="fa-brands fa-github"></i><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        </div><!--descricao-projeto-->
-                    </div><!--box-projeto-->
-
-                    <div class="box-projeto">
-                        <div class="projetos-img img-projeto2"></div>
-                        <span>Calculadora de Gorjeta</span>
-                        <div class="descricao-projeto">
-                            <p>Projeto feito a partir do desafio da Frontend mentor.</p>
-                            <div class="tecnologias-projeto">
-                                <p>html</p>
-                                <p>css</p>
-                                <p>js</p>
-                            </div><!--tecnologias-projeto-->                          
-                            <a target="_blank" href="https://ramawga.github.io/Tip-calculator/"><i class="fa-brands fa-github"></i><i class="fa-solid fa-arrow-up-right-from-square"></i></a>             
-                        </div><!--descricao-projeto-->
-                    </div><!--box-projeto-->
-
-                    <div class="box-projeto">
-                        <div class="projetos-img img-projeto3"></div>
-                        <span>Clone do Instagram</span>
-                        <div class="descricao-projeto">
-                            <p>Projeto feito no curso Front-end completo da Danki code. É um clone
-                                não funcional do instagram.</p>
-                            <div class="tecnologias-projeto">
-                                <p>html</p>
-                                <p>css</p>
-                                <p>js</p>
-                            </div><!--tecnologias-projeto-->                          
-                            <a target="_blank" href="https://ramawga.github.io/Instagram-clone/"><i class="fa-brands fa-github"></i><i class="fa-solid fa-arrow-up-right-from-square"></i></a>             
-                        </div><!--descricao-projeto-->
-                    </div><!--box-projeto-->
+            <div class="head-container">
+                <h3>Meus Projetos</h3>
+                <p>Aqui estão alguns dos projetos mais recentes em que trabalhei, destacando minhas habilidades em desenvolvimento 
+                    front-end e design responsivo.</p>
+            </div>
+                <div id="projetosDinamicos" class="wrap">
+                    <!--os projetos são gerados dinamicamente-->
                 </div><!--wrap--> 
                 <div class="ver-mais">
-                    <a href="projetos.html">Ver Mais!</a>
+                    <a target="_blank" href="https://github.com/Ramawga">Ver Mais!</a>
                 </div><!--ver-mais-->
         </div><!--container-->
     </section><!--projetos-->
 
-    <section id="navtec" class="tecnologias">
-        <div class="container">
-            <h3>Tecnologias</h3>
-            <div class="lista-tecnologias">
-                <ul>
-                    <li><i class="fa-brands fa-html5"></i>HTML5</li>
-                    <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
-                    <li><i class="fa-brands fa-js"></i>JAVASCRIPT</li>
-                </ul>
-                <ul>
-                    <li><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</li>
-                    <li><i class="fa-brands fa-react"></i>REACT JS</li>
-                </ul>
-            </div><!--lista-tecnologias-->
-        </div><!--container-->
-    </section><!--tecnologias-->
-
     <section id="navcontato" class="contato">
         <div class="container">
             <h3>Contato</h3>
+            <p class="Pcontato">Estou sempre à procura de novos desafios e oportunidades para colaborar. Se você tem um projeto em mente ou apenas quer conversar,
+                 sinta-se à vontade para me enviar uma mensagem!</p>
             <dic class="botoes-wrap">
                 <div class="botao">
                     <a target="_blank" href="https://www.instagram.com/lucasramayanaa/"><i class="fa-brands fa-instagram"></i></a>
                 </div><!--botao-->
                 <div class="botao">
-                    <a href="#">(92)99288-2066</a>
-                </div><!--botao-->
+                   <p><i class="fa-regular fa-envelope"></i>lucascavalcante023@gmail.com</p>
+                </div>
                 <div class="botao">
                     <a target="_blank" href="https://www.linkedin.com/in/lucas-ramayana-08630520a/"><i class="fa-brands fa-linkedin"></i></a>
                 </div><!--botao-->
@@ -147,7 +112,7 @@
 
     <footer>
         <div class="texto-footer">
-            <h2>Lucas <span>Rama</span>yana</h2>
+            <h2>Lucas Ramayana</h2>
             <p>Desenvolvendor Front End</p>
         </div><!--texto-footer-->
         <nav class="footer-nav">
@@ -162,7 +127,10 @@
 
     <script src="js/jquery.js"></script>
     <script src="https://kit.fontawesome.com/1e467e3d5c.js" crossorigin="anonymous"></script>
-    <script src="js/functions.js"></script>
+    <script src="js/ScrollTo.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/ProjetosRender.js"></script>
+
     
     
 </body>

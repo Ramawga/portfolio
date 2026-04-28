@@ -1,128 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="icon" href="imagens/Icone.png">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <title>Meu Portfolio</title>
-    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfólio de Lucas Ramayana, desenvolvedor front-end focado em interfaces responsivas, claras e bem acabadas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <title>Lucas Ramayana | Front-end Developer</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="icon">
-                <i class="fa-solid fa-code"></i>
-            </div><!--nickname-->
-            <nav class="atalhos">
+    <header class="site-header">
+        <div class="container header-grid">
+            <a class="brand" href="#topo" aria-label="Ir para o início">
+                <span class="brand-mark"><i class="fa-solid fa-code"></i></span>
+                <span>Lucas Ramayana</span>
+            </a>
+
+            <nav class="atalhos" aria-label="Navegação principal">
                 <ul>
-                    <li><a href="#navsobre">Sobre mim</a></li>
+                    <li><a href="#navsobre">Sobre</a></li>
                     <li><a href="#navprojetos">Projetos</a></li>
                     <li><a href="#navtec">Tecnologias</a></li>
                     <li><a href="#navcontato">Contato</a></li>
                 </ul>
-            </nav><!--atalhos-->
+            </nav>
 
-            <div class="bars">
-                <i id="click" class="fa-solid fa-bars"></i>
-            </div><!--bars-->
+            <a class="header-cta" href="#navcontato">Falar comigo</a>
 
-            <nav class="mobile">
+            <button class="menu-toggle" id="click" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="mobile" aria-label="Navegação mobile">
                 <ul>
-                    <li><a href="#navsobre">Sobre mim</a></li>
+                    <li><a href="#navsobre">Sobre</a></li>
                     <li><a href="#navprojetos">Projetos</a></li>
                     <li><a href="#navtec">Tecnologias</a></li>
                     <li><a href="#navcontato">Contato</a></li>
                 </ul>
-            </nav><!--mobile-->
-        </div><!--container-->
+            </nav>
+        </div>
     </header>
 
-    <section id="navsobre" class="sobre-mim">
-        <div class="container">
-            <div class="textos-sobre">
-                <h3>Sobre Mim</h3>
-            <p>Sou Lucas Ramayana, um desenvolvedor front-end com experiência em criar interfaces modernas, responsivas e 
-                interativas usando tecnologias como JavaScript, React, HTML e CSS. Tenho uma paixão por design centrado
-                 no usuário e desenvolvimento eficiente. Acredito que a atenção aos detalhes e a otimização da experiência
-                  do usuário são o que diferenciam uma boa aplicação de uma excelente.</p>
-            </div><!--textos-sobre-->
-        </div><!--container-->
-    </section><!--sobre-mim-->
+    <main id="topo">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1>Front-end que transforma ideia boa em interface clara.</h1>
+                    <p>Eu construo páginas e aplicações com foco em experiência, responsividade e código bem cuidado. Menos enfeite solto, mais produto fácil de entender e bom de usar.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#navprojetos">Ver projetos</a>
+                        <a class="btn btn-secondary" href="#navcontato">Falar comigo</a>
+                    </div>
+                </div>
 
-    <section id="navtec" class="tecnologias">
-        <div class="container">
-            <h3>Ferramentas e tecnologias que domino</h3>
-            <p>Possuo uma sólida base em desenvolvimento front-end, com ênfase em otimização de performance, acessibilidade e design
-                 responsivo. Essas são algumas das principais tecnologias e ferramentas que utilizo:</p>
-            <div class="slider">
-                <div class="slider-track" id="slider-track">
-                        <div class="slider-item"><i class="fa-brands fa-html5"></i>HTML5</div>
-                        <div class="slider-item"><i class="fa-brands fa-css3-alt"></i>CSS 3</div>
-                        <div class="slider-item"><i class="fa-brands fa-js"></i>JAVASCRIPT</div>
-                        <div class="slider-item"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</div>
-                        <div class="slider-item"><i class="fa-brands fa-react"></i>REACT JS</div> 
-                        <div class="slider-item"><i class="fa-brands fa-node-js"></i>NODE JS</div>       
-                        <div class="slider-item"><i class="fa-solid fa-database"></i>MONGO DB</div>       
-                        <div class="slider-item"><i class="fa-solid fa-code"></i>TYPESCRIPT</div>       
-                        <div class="slider-item"><i class="fa-brands fa-sass"></i>SASS</div>       
-                              
+                <div class="hero-visual" aria-label="Resumo visual do trabalho de Lucas">
+                    <div class="browser-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>interface-preview.dev</p>
+                    </div>
+                    <div class="visual-content">
+                        <div class="code-card">
+                            <p><span>const</span> foco = "experiência";</p>
+                            <p><span>build</span>({ responsivo: true });</p>
+                            <p><span>return</span> layout.claro();</p>
+                        </div>
+                        <div class="preview-card">
+                            <div class="preview-line strong"></div>
+                            <div class="preview-line"></div>
+                            <div class="preview-line short"></div>
+                            <div class="preview-grid">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div><!--container-->
-    </section><!--tecnologias-->
+        </section>
 
-
-    <section id="navprojetos" class="projetos">
-        <div class="container">
-            <div class="head-container">
-                <h3>Meus Projetos</h3>
-                <p>Aqui estão alguns dos projetos mais recentes em que trabalhei, destacando minhas habilidades em desenvolvimento 
-                    front-end e design responsivo.</p>
+        <section id="navsobre" class="sobre-mim section-band">
+            <div class="container split-section">
+                <div>
+                    <h2>Desenvolvo interfaces que ajudam a ideia a aparecer.</h2>
+                </div>
+                <div class="section-text">
+                    <p>Sou Lucas Ramayana, desenvolvedor front-end. Trabalho para transformar requisitos em telas organizadas, rápidas e responsivas, cuidando tanto da primeira impressão quanto dos detalhes que aparecem depois do clique.</p>
+                    <p>Gosto de criar experiências com estrutura, visual limpo e interações diretas. Para mim, uma boa interface não precisa gritar: ela orienta, responde bem e deixa o usuário seguir sem atrito.</p>
+                </div>
             </div>
+        </section>
+
+        <section id="navtec" class="tecnologias">
+            <div class="container section-heading">
+                <h2>Tecnologias que uso para tirar interfaces do papel.</h2>
+                <p>Base sólida de front-end, com atenção a performance, acessibilidade, componentização e integração com APIs.</p>
+            </div>
+            <div class="slider" aria-label="Lista de tecnologias">
+                <div class="slider-track is-animated" id="slider-track">
+                    <div class="slider-item"><i class="fa-brands fa-html5"></i>HTML5</div>
+                    <div class="slider-item"><i class="fa-brands fa-css3-alt"></i>CSS3</div>
+                    <div class="slider-item"><i class="fa-brands fa-js"></i>JavaScript</div>
+                    <div class="slider-item"><i class="fa-brands fa-bootstrap"></i>Bootstrap</div>
+                    <div class="slider-item"><i class="fa-brands fa-react"></i>React</div>
+                    <div class="slider-item"><i class="fa-brands fa-node-js"></i>Node.js</div>
+                    <div class="slider-item"><i class="fa-solid fa-database"></i>MongoDB</div>
+                    <div class="slider-item"><i class="fa-solid fa-code"></i>TypeScript</div>
+                    <div class="slider-item"><i class="fa-brands fa-sass"></i>Sass</div>
+                    <div class="slider-item" aria-hidden="true"><i class="fa-brands fa-html5"></i>HTML5</div>
+                    <div class="slider-item" aria-hidden="true"><i class="fa-brands fa-css3-alt"></i>CSS3</div>
+                    <div class="slider-item" aria-hidden="true"><i class="fa-brands fa-js"></i>JavaScript</div>
+                    <div class="slider-item" aria-hidden="true"><i class="fa-brands fa-bootstrap"></i>Bootstrap</div>
+                    <div class="slider-item" aria-hidden="true"><i class="fa-brands fa-react"></i>React</div>
+                    <div class="slider-item" aria-hidden="true"><i class="fa-brands fa-node-js"></i>Node.js</div>
+                    <div class="slider-item" aria-hidden="true"><i class="fa-solid fa-database"></i>MongoDB</div>
+                    <div class="slider-item" aria-hidden="true"><i class="fa-solid fa-code"></i>TypeScript</div>
+                    <div class="slider-item" aria-hidden="true"><i class="fa-brands fa-sass"></i>Sass</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="navprojetos" class="projetos section-band">
+            <div class="container">
+                <div class="section-heading projects-heading">
+                    <h2>Projetos selecionados.</h2>
+                    <p>Alguns trabalhos onde pratiquei fluxo de interface, responsividade, organização de código e integração entre tela e regra de negócio.</p>
+                </div>
                 <div id="projetosDinamicos" class="wrap">
-                    <!--os projetos são gerados dinamicamente-->
-                </div><!--wrap--> 
-                <div class="ver-mais">
-                    <a target="_blank" href="https://github.com/Ramawga">Ver Mais!</a>
-                </div><!--ver-mais-->
-        </div><!--container-->
-    </section><!--projetos-->
-
-    <section id="navcontato" class="contato">
-        <div class="container">
-            <h3>Contato</h3>
-            <p class="Pcontato">Estou sempre à procura de novos desafios e oportunidades para colaborar. Se você tem um projeto em mente ou apenas quer conversar,
-                 sinta-se à vontade para me enviar uma mensagem!</p>
-            <dic class="botoes-wrap">
-                <div class="botao">
-                    <a target="_blank" href="https://www.instagram.com/lucasramayanaa/"><i class="fa-brands fa-instagram"></i></a>
-                </div><!--botao-->
-                <div class="botao">
-                   <p><i class="fa-regular fa-envelope"></i>lucascavalcante023@gmail.com</p>
+                    <!-- Projetos gerados dinamicamente -->
                 </div>
-                <div class="botao">
-                    <a target="_blank" href="https://www.linkedin.com/in/lucas-ramayana-08630520a/"><i class="fa-brands fa-linkedin"></i></a>
-                </div><!--botao-->
-            </dic><!--botoes-wrap-->
-        </div><!--container-->
-    </section><!--contato-->
+                <div class="ver-mais">
+                    <a class="btn btn-secondary" target="_blank" rel="noreferrer" href="https://github.com/Ramawga">Ver GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="navcontato" class="contato">
+            <div class="container contact-grid">
+                <div>
+                    <h2>Vamos construir algo com presença?</h2>
+                    <p class="Pcontato">Se você tem uma ideia, uma tela que precisa melhorar ou um produto que merece uma experiência mais clara, me chama. Eu gosto de entrar cedo na conversa e transformar intenção em interface.</p>
+                </div>
+                <div class="botoes-wrap">
+                    <a class="contact-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/lucasramayanaa/">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a class="contact-link" href="mailto:lucascavalcante023@gmail.com">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>lucascavalcante023@gmail.com</span>
+                    </a>
+                    <a class="contact-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lucas-ramayana-08630520a/">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <div class="texto-footer">
-            <h2>Lucas Ramayana</h2>
-            <p>Desenvolvendor Front End</p>
-        </div><!--texto-footer-->
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="#navsobre">Sobre mim</a></li>
-                <li><a href="#navprojetos">Projetos</a></li>
-                <li><a href="#navtec">Tecnologias</a></li>
-                <li><a href="#navcontato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container footer-grid">
+            <div class="texto-footer">
+                <h2>Lucas Ramayana</h2>
+                <p>Desenvolvedor Front-end</p>
+            </div>
+            <nav class="footer-nav" aria-label="Navegação do rodapé">
+                <ul>
+                    <li><a href="#navsobre">Sobre</a></li>
+                    <li><a href="#navprojetos">Projetos</a></li>
+                    <li><a href="#navtec">Tecnologias</a></li>
+                    <li><a href="#navcontato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 
     <script src="js/jquery.js"></script>
@@ -130,8 +187,5 @@
     <script src="js/ScrollTo.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/ProjetosRender.js"></script>
-
-    
-    
 </body>
 </html>

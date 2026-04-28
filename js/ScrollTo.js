@@ -1,24 +1,27 @@
+$(document).ready(function () {
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
 
-$(document).ready(function(){
-	$("a").on('click', function(event) {
-  
+      const hash = this.hash;
 
-	  if (this.hash !== "") {
-		event.preventDefault();
-  
-		var hash = this.hash;
-  
-		$('html, body').animate({
-		  scrollTop: $(hash).offset().top
-		}, 800, function(){
-	 
-		  window.location.hash = hash;
-		});
-	  } 
-	});
+      $("html, body").animate({
+        scrollTop: $(hash).offset().top - 72
+      }, 700, function () {
+        window.location.hash = hash;
+      });
+
+      $(".mobile").slideUp(180);
+      $("#click").attr("aria-expanded", "false");
+      $("body").removeClass("menu-open");
+    }
   });
+});
 
-$( "#click" ).click(function() {
-	$( ".mobile" ).toggle( "progress", function() {
-	});
-  });
+$("#click").click(function () {
+  const isOpen = $(this).attr("aria-expanded") === "true";
+
+  $(".mobile").slideToggle(180);
+  $(this).attr("aria-expanded", String(!isOpen));
+  $("body").toggleClass("menu-open", !isOpen);
+});
